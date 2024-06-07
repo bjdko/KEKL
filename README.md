@@ -39,7 +39,7 @@ python3 ./KgamepassExplorerKillerLauncher.py
    - Tombol "exit":
      1. If you see this, vivon zulul.
 
-Cara menambahkan game sendiri (buat sementara, surely nanti w tambah bill tin feature):
+**Cara menambahkan game sendiri (buat sementara, surely nanti w tambah bill tin feature):**
 1. **Nama Game**
    - Ga ngaruh, isi anything.
 2. **package_name**
