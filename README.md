@@ -34,8 +34,9 @@ python3 ./KgamepassExplorerKillerLauncher.py
      2. Menyesuaikan versi dengan cara listdir semua game GamePass (Butuh Admin).
      3. Refresh serta tawaran untuk menghapus game invalid.
    - Tombol "launch":
-     1. launch dan kill explorer setelah delay yang ditentukan menggunakan PowerShell.
+     1. Launch dan kill explorer setelah delay yang ditentukan menggunakan PowerShell.
      2. GUI meninggal, biar ga ada proses python.exe sp tw ada anticit rewel lmoA.
+     3. Explorer otomatis kembali setelah game dikeluarin.
    - Tombol "exit":
      1. If you see this, vivon zulul.
 
@@ -66,7 +67,8 @@ python3 ./KgamepassExplorerKillerLauncher.py
 ## Features
 
 - Buka GamepassDari sini.
-- Otomatis kill explorer untuk menghindari usiran ngontuol
+- Otomatis kill explorer untuk menghindari usiran ngontuol.
+- Otomatis explorer kembali setelah main.
 - Add-able ish.
 
 ## To-Do / Roadmap / What I Want to Do
