@@ -12,7 +12,7 @@ Automatically kills explorer and reopen it after playing!
 
 ## Download
 Versi kompilasi yang dapat dieksekusi:
-[Releases · bjdko/KEKL (github.com)](https://github.com/bjdko/KEKL/releases/latest)
+[Latest Releases · bjdko/KEKL (github.com)](https://github.com/bjdko/KEKL/releases/latest)
 
 Atau
 ```bash
