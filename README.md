@@ -5,7 +5,7 @@ Nanggung coek masa GEKL
 ## Table of Contents
 
 - [Installation](#Download)
-- [Usage](#usage)
+- [Usage](#Penggunaan dan Keterangan)
 - [Features](#features)
 
 ## Download
