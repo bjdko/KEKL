@@ -10,7 +10,7 @@ Nanggung coek masa GEKL
 
 ## Download
 Versi kompilasi yang dapat dieksekusi:
-[Releases · bjdko/KEKL (github.com)](https://github.com/bjdko/KEKL/releases)
+[Releases · bjdko/KEKL (github.com)](https://github.com/bjdko/KEKL/releases/latest)
 
 Atau
 ```bash
