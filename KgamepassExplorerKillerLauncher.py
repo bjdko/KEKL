@@ -23,9 +23,47 @@ def donlod_gamelist():
     urllib.request.urlretrieve("https://raw.githubusercontent.com/bjdko/KEKL/main/gamelist.json", gamelist_json)
 
 
+# Create the main window
+root = tk.Tk()
+root.title("Kanjut Badag!")
+root.geometry("500x300")
+root.configure(background="#ACB992")
+root.attributes('-topmost', True)
+# Judulge
+judul = tk.Label(root, text="XDDINSIDE", font=("Georgia", 24, "bold"), fg="#362706", background="#ACB992")
+judul.pack(pady=5)
+
+# input frame
+input_frame = tk.Frame(root)
+input_frame.configure(background="#ACB992")
+input_frame.pack()
+
+search_label = tk.Label(input_frame, text="searchge:", font=("Georgia", 12), fg="#362706", background="#ACB992")
+search_label.grid(row=0, column=0)
+search_entry = tk.Entry(input_frame, background="#E9E5D6", font=("Georgia", 12), width=12)
+search_entry.grid(row=0, column=1, padx=(0, 75))
+
+delay_label = tk.Label(input_frame, text="delay:", font=("Georgia", 12), fg="#362706", background="#ACB992")
+delay_label.grid(row=0, column=2)
+delay_entry = tk.Entry(input_frame, width=4, background="#E9E5D6", font=("Georgia", 12))
+delay_entry.grid(row=0, column=3)
+s_label = tk.Label(input_frame, text="s", font=("Georgia", 12), fg="#362706", background="#ACB992")
+s_label.grid(row=0, column=4)
+
+# Create and place the search results text box
+game_listbox = tk.Listbox(root, height=5, width=27, background="#E9E5D6", font=("Georgia", 18), )
+game_listbox.pack(pady=5)
+
+
+# Create and place the buttons
+button_frame = tk.Frame(root)
+button_frame.configure(background="#ACB992")
+button_frame.pack(pady=10)
+
+
 # FIRST TIME LAUNCH CHECK TAWAR DONLOD OR NAH?
 if not os.path.exists(gamelist_json) and not os.path.exists(config_json):
-    first_time = messagebox.askquestion("🚨🚨FIRST TIME LAUNCH🚨🚨", "\n download config gx\n\n kalo ga, donlod pake tombol fetch")
+    first_time = messagebox.askquestion("🚨🚨FIRST TIME LAUNCH🚨🚨", "Mau download config gx?\nkalo ga, donlod pake tombol fetch")
     if first_time == "yes":
         donlod_gamelist()
 
@@ -165,7 +203,7 @@ def launch_action():
     _game_path = os.path.join(windows_apps_dir, _game_dict["package_name"])
     _game_launch = os.path.join(_game_path, launcher_exe)
     if not os.path.exists(_game_launch):
-        messagebox.showerror("ITIL", "game tidaklah valid")
+        messagebox.showerror("ITIL", "Game tidaklah valid!\nCoba pencet >fetch< biar nomor versinya sesuai.")
         return
     if _game_dict["executable"].endswith("exe"):
         _game_exec_name = os.path.splitext(_game_dict["executable"])[0]
@@ -249,43 +287,6 @@ def delay_check(_):
     config["delay"] = max(0, typed)
     write_config()
 
-
-# Create the main window
-root = tk.Tk()
-root.title("Kanjut Badag!")
-root.geometry("500x300")
-root.configure(background="#ACB992")
-
-# Judulge
-judul = tk.Label(root, text="XDDINSIDE", font=("Georgia", 24, "bold"), fg="#362706", background="#ACB992")
-judul.pack(pady=5)
-
-# input frame
-input_frame = tk.Frame(root)
-input_frame.configure(background="#ACB992")
-input_frame.pack()
-
-search_label = tk.Label(input_frame, text="searchge:", font=("Georgia", 12), fg="#362706", background="#ACB992")
-search_label.grid(row=0, column=0)
-search_entry = tk.Entry(input_frame, background="#E9E5D6", font=("Georgia", 12), width=12)
-search_entry.grid(row=0, column=1, padx=(0, 75))
-
-delay_label = tk.Label(input_frame, text="delay:", font=("Georgia", 12), fg="#362706", background="#ACB992")
-delay_label.grid(row=0, column=2)
-delay_entry = tk.Entry(input_frame, width=4, background="#E9E5D6", font=("Georgia", 12))
-delay_entry.grid(row=0, column=3)
-s_label = tk.Label(input_frame, text="s", font=("Georgia", 12), fg="#362706", background="#ACB992")
-s_label.grid(row=0, column=4)
-
-# Create and place the search results text box
-game_listbox = tk.Listbox(root, height=5, width=27, background="#E9E5D6", font=("Georgia", 18), )
-game_listbox.pack(pady=5)
-
-
-# Create and place the buttons
-button_frame = tk.Frame(root)
-button_frame.configure(background="#ACB992")
-button_frame.pack(pady=10)
 
 fetch_button = tk.Button(button_frame, text="fetch", command=fetch_gamelist, bg="#464E2E", fg="#E9E5D6",
                          font=("Georgia", 8, "bold"), width=5)
