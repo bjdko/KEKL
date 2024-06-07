@@ -1,0 +1,18 @@
+{
+  "dummy": {
+    "package_name": "dummy",
+    "executable": "dummy"
+  },
+  "Moving Out 2": {
+    "package_name": "Team17DigitalLimited.ProjectJourney_1.0.5.0_x64__j5x4vj4y67jhc",
+    "executable": "MovingOut2.exe"
+  },
+  "Orcs Must Die! 3": {
+    "package_name": "3435robotentertainment.OrcsMustDie3_1.2.5.0_x64__s3rxhkmynr4z0",
+    "executable": "OMD-WinGDK-Shipping.exe"
+  },
+  "No Man's Sky": {
+    "package_name": "HelloGames.NoMansSky_4.72.0.0_x64__bs190hzg1sesy",
+    "executable": "NMS.exe"
+  }
+}
