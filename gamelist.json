@@ -14,5 +14,9 @@
   "No Man's Sky": {
     "package_name": "HelloGames.NoMansSky_4.72.0.0_x64__bs190hzg1sesy",
     "executable": "NMS.exe"
+    },
+  "Sea of Thieves": {
+    "package_name": "Microsoft.SeaofThieves_2.130.4652.0_x64__8wekyb3d8bbwe",
+    "executable": "SoTGame.exe"
   }
 }
