@@ -14,9 +14,13 @@
   "No Man's Sky": {
     "package_name": "HelloGames.NoMansSky_4.72.0.0_x64__bs190hzg1sesy",
     "executable": "NMS.exe"
-    },
+  },
   "Sea of Thieves": {
-    "package_name": "Microsoft.SeaofThieves_2.130.4652.0_x64__8wekyb3d8bbwe",
+    "package_name": "Microsoft.SeaofThieves_2.131.1937.0_x64__8wekyb3d8bbwe",
     "executable": "SoTGame.exe"
+  },
+  "Sandrock Online": {
+    "package_name": "37951PMStudiosInc.SandrockOnline_120.0.12.0_x64__qvb4qp2szbchw",
+    "executable": "SandrockMultiPlayer.exe"
   }
 }
